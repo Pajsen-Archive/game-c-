@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace EnterText
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            gameTitle();
+        }
+
+        public static void gameTitle()
+        {
+            Console.WriteLine("Welcome");
+            Console.WriteLine("You have been choosen");
+            Console.WriteLine("Choosen for what you might ask?");
+            Console.WriteLine("Well, this is the SCP-276");
+            Console.WriteLine("SCP-276 is a simulation");
+            Console.WriteLine("So nothing you are doing here is real");
+            Console.WriteLine("You need to survive 3 or more days");
+            Console.WriteLine("Press Enter to start");
+            Console.ReadLine();
+            Console.Clear();
+            logo();
+
+        }
+        public static void logo()
+        {
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Public\TestFolder\WriteLines2.txt");
+
+            // Display the file contents by using a foreach loop.
+            System.Console.WriteLine("Contents of WriteLines2.txt = ");
+            foreach (string line in lines)
+                {
+                // Use a tab to indent each line of the file.
+             Console.WriteLine("\t" + line);
+             }
+
+        }
+
+        public static void first()
+        {
+        }
+
+        public static void second()
+        {
+        }
+
+        public static void third()
+        {
+        }
+
+        public static void gameOver()
+        {
+        }
+        public static void youWin()
+        {
+        }
+    }
+}
